@@ -1,0 +1,27 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Regístrate{% endblock %}
+
+{% block content %}
+
+
+
+<body>
+    <div class="d-flex">  
+        <form class="justify-content-center align-content-center col-12" action="" method="POST">
+
+            {% csrf_token %}
+            {{form.as_p}}
+    
+            <button type="submit"> Registrate!</button>
+    
+        </form>
+    </div>      
+    
+
+</body>
+</html>
+
+{% endblock %}
